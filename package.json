@@ -26,6 +26,7 @@
   "devDependencies": {
     "babel-eslint": "^1.0.14",
     "babelify": "^5.0.4",
+    "browser-sync": "^2.2.3",
     "browserify": "^9.0.3",
     "gulp": "^3.8.11",
     "gulp-nodemon": "^1.0.5",
