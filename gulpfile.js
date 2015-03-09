@@ -1,8 +1,6 @@
 var gulp = require('gulp');
-//var sourcemaps = require('sourcemaps');
 var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
-var concat = require('gulp-concat');
 var nodemon = require('gulp-nodemon');
 
 var browserSync = require('browser-sync');
