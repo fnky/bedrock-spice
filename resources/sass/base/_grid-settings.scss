@@ -1,4 +1,4 @@
-//@import 'neat-helpers'; // or '../neat/neat-helpers' when not in Rails
+@import 'neat-helpers';
 
 $column-gutter: em(30);
 $row-width: em(1000);

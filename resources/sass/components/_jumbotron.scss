@@ -1,0 +1,12 @@
+.jumbotron {
+  padding: 2em;
+  max-width: 700px;
+  margin: 30px auto;
+  border-radius: 10px;
+  border: 1px solid $base-border-color;
+  box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+
+.jumbotron p {
+  text-align: left;
+}

@@ -1,3 +1,11 @@
+/*
+// Neat Breakpoints
+$medium-screen: em(640);
+$large-screen: em(860);
+
+$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
+$large-screen-up: new-breakpoint(min-width $large-screen 8);
+*/
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8,19 +16,216 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
-/* Application CSS */
-/* You can probably delete all this once you're ready to make changes. */
-body {
-  font-family: 'Lato';
-  background: white;
-  color: #333;
-  line-height: 1.6;
-  font-size: 16px;
-  padding: 20px; }
+/*
+// Neat Breakpoints
+$medium-screen: em(640);
+$large-screen: em(860);
 
-a, a:hover, a:visited, a:focus {
+$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
+$large-screen-up: new-breakpoint(min-width $large-screen 8);
+*/
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  line-height: 28.8px;
+  text-rendering: optimizeLegibility; }
+  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    color: #999;
+    font-weight: normal; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 32px; }
+
+h3 {
+  font-size: 28px; }
+
+h4 {
+  font-size: 24px; }
+
+h5 {
+  font-size: 20px; }
+
+h6 {
+  font-size: 16px; }
+
+p {
+  margin: 0 0 12px; }
+
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
   color: #3540ff;
   text-decoration: none; }
+  a:hover {
+    color: #9ba0ff; }
+
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 24px 0; }
+
+img {
+  margin: 0;
+  max-width: 100%; }
+
+blockquote {
+  border-left: 2px solid #ddd;
+  color: #595959;
+  margin: 24px 0;
+  padding-left: 12px; }
+
+cite {
+  color: #737373;
+  font-style: italic; }
+  cite:before {
+    content: '\2014 \00A0'; }
+
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  margin: 0 0 12px 0;
+  padding: 24px; }
+
+input, label, select {
+  display: block;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 16px; }
+
+label {
+  font-weight: bold;
+  margin-bottom: 6px; }
+  label.required:after {
+    content: "*"; }
+  label abbr {
+    display: none; }
+
+textarea, input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea, select[multiple=multiple] {
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  margin-bottom: 12px;
+  padding: 8px 8px;
+  width: 100%; }
+
+textarea {
+  resize: vertical; }
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 6px; }
+
+input[type="file"] {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  width: 100%; }
+
+select {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 24px; }
+
+table {
+  border-collapse: collapse;
+  margin: 12px 0;
+  table-layout: fixed;
+  width: 100%; }
+
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 12px 0;
+  text-align: left; }
+
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0; }
+
+tr, td, th {
+  vertical-align: middle; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+dl {
+  margin-bottom: 12px; }
+  dl dt {
+    font-weight: bold;
+    margin-top: 12px; }
+  dl dd {
+    margin: 0; }
+
+button, input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+.btn, a.btn {
+  background: transparent;
+  border: 1px solid #3540ff;
+  border-radius: 20px;
+  color: #3540ff;
+  transition: all 0.33s; }
+
+.btn:hover, a.btn:hover, .btn:focus, a.btn:focus {
+  background: #3540ff;
+  border-color: #3540ff;
+  color: white; }
+
+/* Horizontally and vertically centers the text */
+.center {
+  margin: 0 auto;
+  padding: 0 40px 0 40px;
+  max-width: 600px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.container {
+  max-width: em(1088);
+  margin-left: auto;
+  margin-right: auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .jumbotron {
   padding: 2em;
@@ -32,18 +237,3 @@ a, a:hover, a:visited, a:focus {
 
 .jumbotron p {
   text-align: left; }
-
-h1 small {
-  color: #999;
-  font-weight: normal; }
-
-.btn, a.btn {
-  background: transparent;
-  border: 1px solid #3540ff;
-  border-radius: 20px;
-  color: #3540ff;
-  transition: all 0.33s; }
-
-.btn:hover, a.btn:hover, .btn:focus, a.btn:focus {
-  background: #3540ff;
-  color: white; }

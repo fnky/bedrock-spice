@@ -1,17 +1,21 @@
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: $base-background-color;
-  color: $base-font-color;
+  background-color: $bg-color;
+  color: $text-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  line-height: $unitless-line-height;
+  line-height: $base-line-height;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font-family;
-  line-height: $header-line-height;
-  margin: 0;
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
+
+  small {
+    color: #999;
+    font-weight: normal;
+  }
 }
 
 h1 {
@@ -44,16 +48,11 @@ p {
 
 a {
   @include transition(color 0.1s linear);
-  color: $base-link-color;
+  color: $link-color;
   text-decoration: none;
 
   &:hover {
-    color: $hover-link-color;
-  }
-
-  &:active, &:focus {
-    color: $hover-link-color;
-    outline: none;
+    color: $link-hover-color;
   }
 }
 
@@ -72,13 +71,13 @@ img {
 
 blockquote {
   border-left: 2px solid $base-border-color;
-  color: lighten($base-font-color, 15);
+  color: lighten($text-color, 15);
   margin: $base-line-height 0;
   padding-left: $base-line-height / 2;
 }
 
 cite {
-  color: lighten($base-font-color, 25);
+  color: lighten($text-color, 25);
   font-style: italic;
 
   &:before {

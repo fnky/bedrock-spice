@@ -8,3 +8,18 @@ input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap;
 }
+
+.btn, a.btn {
+  background: transparent;
+  border: 1px solid $button-color;
+  border-radius: 20px;
+  color: $button-color;
+  transition: all 0.33s;
+}
+
+.btn:hover, a.btn:hover,
+.btn:focus, a.btn:focus {
+  background: $button-hover-color;
+  border-color: $button-hover-color;
+  color: white;
+}

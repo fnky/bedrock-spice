@@ -7,18 +7,9 @@
 // Neat Settings -- uncomment if using Neat -- must be imported before Neat
 @import 'grid-settings';
 
-// Mixins
-@import 'mixins/flash';
-
-// Extends
-@import 'extends/button';
-@import 'extends/clearfix';
-@import 'extends/hide-text';
-
 // Typography and Elements
 @import 'typography';
 @import 'forms';
 @import 'tables';
 @import 'lists';
-@import 'flashes';
 @import 'buttons';
