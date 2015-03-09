@@ -1,6 +1,6 @@
 # Bedrock + Spice
 
-[Bedrock](http://tilomitra.github.io/bedrock) with extra [spice](#Spice)
+[Bedrock](http://tilomitra.github.io/bedrock) with extra [spice](#spice)
 
 ## Spice
 
