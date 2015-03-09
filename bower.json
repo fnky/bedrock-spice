@@ -1,0 +1,33 @@
+{
+  "name": "bedrock-spice",
+  "version": "0.1.3",
+  "homepage": "https://github.com/fnky/bedrock-spice",
+  "authors": [
+    "Christian Petersen <chrs@cbp.io> (http://cbp.io)"
+  ],
+  "description": "Bedrock with sugar, spice and nice things.",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "bedrock",
+    "express",
+    "babel",
+    "es6",
+    "sass"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "~1.7.1",
+    "animate-sass": "~0.6.3"
+  }
+}
