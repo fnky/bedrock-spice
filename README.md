@@ -4,7 +4,7 @@
 
 ## Spice
 
-- Gulp
+- [Gulp](http://gulpjs.com)
 - Babel ([babelify](https://github.com/babel/babelify) + [browserify](https://github.com/substack/node-browserify))
 - Sass ([gulp-sass](https://github.com/dlmanning/gulp-sass))
     - Neat ([bourbon](https://github.com/thoughtbot/bourbon) + [neat](https://github.com/thoughtbot/neat))
